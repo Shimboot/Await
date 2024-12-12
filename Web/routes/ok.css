@@ -1,0 +1,26 @@
+div {
+color: white;
+text-align: center;
+font-family: "inter";
+text-decoration: solid;
+
+}
+
+body {
+    background-color: black;
+}
+
+img {
+border: 2px solid rgb(6, 6, 6);
+transition: all 0.4s ease-in-out;
+animation-name: Slide;
+animation-duration: 1s;
+}
+
+img:hover{
+    background-color: grey;
+}
+
+@keyframes Slide {
+from{transform: translateX(100%);}    
+}
