@@ -1,0 +1,59 @@
+
+@font-face {
+font-family: 'inter';
+src: url(/Web/fonts/static/Montserrat-Regular.ttf) format('truetype');
+font-weight: 100 900;
+}
+
+@keyframes pop {
+0% {
+
+    scale: 1;
+}
+100% {
+    scale: 2;
+}
+}
+@keyframes Slide {
+from{transform: translateY(100%);}
+}
+
+body {
+background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+background-color: #E71D36;
+font-family: "inter";
+font-weight: bold;
+text-align: center;
+border:rgb(6, 6, 6);
+padding: 8px;
+border-radius: 50px;    
+}
+
+button:hover{
+transition: all 0.4s ease-in;
+animation-name: pop;
+}
+.fancy:hover{
+transition: all 0.4s ease-in;
+background-color: rgb(6, 6, 6);   
+}
+
+.fancy { 
+transition: ease-in-out;
+animation-duration: 1s;
+animation-name: Slide;
+font-family: "inter";
+font-weight: bold;
+text-align: center;
+background-color:black;
+padding: 18px;
+color: white;
+text-decoration: solid;
+}
